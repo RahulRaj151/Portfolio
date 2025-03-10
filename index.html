@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Raj - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="name">Rahul Raj</div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home" class="main">
+        <div class="textmain">
+            <h1 class="textmain-h1">Rahul Raj</h1>
+            <h1 class="textmain-h1"></h1>
+            <p class="textmain-p">WEB DEVELOPER</p>
+        </div>
+    </section>
+    <section id="about" class="main-sec-abt">
+        <div class="cnt-hd">
+            <h1 class="cnt-main-h1">About <span class="r-in-clr">Me</span></h1>
+            <p class="cnt-sub-p"><span class="r-in-clr">Get</span> to know me</p>
+        </div>
+        <div class="abt-sub">
+            <div class="abt-text">
+                <h1>I'm creative <span class="r-in-clr">web developer</span> based in Bhubneshwar, India</h1>
+                <p>Front-End Developer passionate about building clean, responsive user interfaces with HTML, CSS, and JavaScript. Currently focused on mastering frameworks like React, I'm eager to apply my skills and grow in a dynamic team environment. As a 2nd-year CSIT student, I bring fresh ideas, adaptability, and a strong foundation in modern web technologies.</p>
+            </div>
+            <div class="my-photo">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQFp4K1q3mN-zg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1703517084258?e=1740009600&v=beta&t=y9gGi3Zwtm1tZQSEwHz8zplyqZNG3BhikWaYYAk0zAU" alt="Rahul-Raj">
+            </div>
+        </div>
+        <div class="skills-container">
+            <h1 class="cnt-main-h1">My <span class="r-in-clr">Skill</span></h1>
+            <div class="skills-grid">
+                <div class="skill">
+                    <label for="html-css">HTML/CSS</label>
+                    <progress id="html-css" value="95" max="100">95%</progress>
+                </div>
+                <div class="skill">
+                    <label for="java">Java</label>
+                    <progress id="java" value="90" max="100">90%</progress>
+                </div>
+                <div class="skill">
+                    <label for="Python">Python</label>
+                    <progress id="Python" value="55" max="100">55%</progress>
+                </div>
+                <div class="skill">
+                    <label for="MySQL">MySQL</label>
+                    <progress id="MySQL" value="30" max="100">30%</progress>
+                </div>
+                <div class="skill">
+                    <label for="cpp">C++</label>
+                    <progress id="cpp" value="40" max="100">40%</progress>
+                </div>
+                <div class="skill">
+                    <label for="seo">SEO</label>
+                    <progress id="seo" value="84" max="100">84%</progress>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="main-sec-ptf">
+        <div class="cnt-hd">
+            <h1 class="cnt-main-h1"><span class="r-in-clr">My</span> Portfolio</h1>
+            <p class="cnt-sub-p">Some of my <span class="r-in-clr">Works</span></p>
+        </div>
+        <div class="project-container">
+            <div class="project">
+                <img src="https://images.surferseo.art/9602bc4b-cfc4-410e-b291-611d478c9d6a.png" alt="Web Designing" class="project-image">
+                <div class="project-details">
+                    <h1>Web Designing</h1>
+                    <p>I specialize in crafting responsive, user-friendly websites that cater to the latest design trends.From layout and typography to color theory, I create designs that are both visually appealing and functional, ensuring the best possible user experience.</p>
+                    <button class="view-button">View Project</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://logolook.net/wp-content/uploads/2022/11/Java-Logo.png" alt="Java" class="project-image">
+                <div class="project-details">
+                    <h1>Java</h1>
+                    <p>I have worked on numerous projects in Java, showcasing its versatility and power. These projects span different domains, including desktop applications, web development, and data-driven systems. </p>
+                    <button class="view-button">View Project</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="main-sec-cnt">
+        <div class="cnt-hd">
+            <h1 class="cnt-main-h1">Contact <span class="r-in-clr">Me</span></h1>
+            <p class="cnt-sub-p"><span class="r-in-clr">Get</span> In Touch.</p>
+        </div>
+        <div class="cnt-sub">
+            <div class="message-form">
+                <h2>Message Me</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="text" name="firstname" placeholder="FirstName" required>
+                        <input type="text" name="lastname" placeholder="LastName" required>
+                    </div>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contact-card">
+                <h2>Contact Info</h2>
+                <div class="contact-detail">
+                    <span><strong>Name</strong>: <br>Rahul Raj</span>
+                </div>
+                <div class="contact-detail">
+                    <span><strong>Location</strong>: <br>Jamshedpur, India</span>
+                </div>
+                <div class="contact-detail">
+                    <span><strong>Call</strong>: <br>+91 7543035923</span>
+                </div>
+                <div class="contact-detail">
+                    <span><strong>Email</strong>: <br>rrjsr04@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>&copy; 2024 Rahul Raj</footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('nav').classList.remove('active');
+                document.querySelector('.hamburger-menu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

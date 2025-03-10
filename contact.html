@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="name">Rahul Raj</div>
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+  <div class="main-sec-cnt">
+    <div class="cnt-hd">
+      <h1 class="cnt-main-h1">Contact <span class="r-in-clr">Me</span></h1>
+      <p class="cnt-sub-p"><span class="r-in-clr">Get</span> In Touch.</p>
+    </div>
+    <div class="cnt-sub">
+      <div class="message-form">
+        <h2>Message Me</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <input type="text" name="firstname" placeholder="FirstName" required>
+            <input type="text" name="lastname" placeholder="LastName" required>
+          </div>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" placeholder="Message" rows="5" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="contact-card">
+        <h2>Contact Info</h2>
+        <div class="contact-detail">
+          <span><strong>Name</strong>: <br>Rahul Raj</span>
+        </div>
+        <div class="contact-detail">
+          <span><strong>Location</strong>: <br>Jamshedpur, India</span>
+        </div>
+        <div class="contact-detail">
+          <span><strong>Call</strong>: <br>+91 7543035923</span>
+        </div>
+        <div class="contact-detail">
+          <span><strong>Email</strong>: <br>rrjsr04@gmail.com</span>
+        </div>
+      </div>
+    </div>      
+   </div>
+  <footer>&copy; 2024 Rahul Raj</footer>
+  
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+      document.querySelector('nav').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+    
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.querySelector('nav').classList.remove('active');
+        document.querySelector('.hamburger-menu').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
